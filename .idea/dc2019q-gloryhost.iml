@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/service/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/service/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/service/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/service/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/interaction/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/interaction/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/interaction/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/interaction/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/interaction/target" />
+      <excludeFolder url="file://$MODULE_DIR$/service/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

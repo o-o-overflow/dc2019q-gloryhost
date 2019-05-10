@@ -4,7 +4,7 @@ description: |
 tags: [pwn, reverse]
 violates_flag_format: false
 allow_egress: false
-flag: "OOO{hENLo, ()FphICER? Ye5, TH!5 Ser\/iC3 R!gh7 H3r3.}"
+flag: "OOO{hENLo, ()FphICER? Ye5, TH!5 SerViC3 R!gh7 H3r3.}"
 type: normal
 concurrent_connections: 16
 authors: [nullptr]
