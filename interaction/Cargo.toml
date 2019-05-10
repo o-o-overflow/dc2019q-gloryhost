@@ -1,0 +1,7 @@
+[package]
+name = "gloryhost_interaction"
+version = "0.1.0"
+authors = ["Anonymous <anonymous@oooverflow.io>"]
+edition = "2018"
+
+[dependencies]
