@@ -10,11 +10,5 @@ concurrent_connections: 16
 authors: [nullptr]
 public_files:
   - service/build/gloryhost
-
-# Test scripts are heavily encouraged.
-# All scripts should exit 0 if nothing went wrong.
-# Scripts are automatically determined to be exploit scripts if they start with the word "exploit".
-# Exploit scripts must output the flag using "FLAG: <FLAG>" and exit with 0 if the flag was captured correctly.
-# The paths are absolute in the `interaction` docker container.
 interactions:
-  - /app/
+  - /app/test.sh
