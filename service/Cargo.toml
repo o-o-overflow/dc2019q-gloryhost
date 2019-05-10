@@ -12,8 +12,8 @@ slog = "2.4.1"
 slog-term = "2.4.0"
 syscallz = "0.11.2"
 tokio = "0.1.19"
-wasmer-runtime = "0.4.0"
-wasmer-wasi = "0.4.0"
+wasmer-runtime = "0.4.1"
+wasmer-wasi = "0.4.1"
 
 [build-dependencies]
 cc = "1.0.36"

@@ -68,16 +68,16 @@ fn main() {
 
     unsafe {
         let mut flag = String::new();
-        File::open("./FLAG")
+        File::open("flag")
             .expect("unable to open flag")
             .read_to_string(&mut flag)
             .expect("unable to read flag");
-        debug!(
-            log,
-            "secret={:#?} array1={:#?}",
-            _data6.as_ptr(),
-            _data3.as_ptr(),
-        );
+//        debug!(
+//            log,
+//            "secret={:#?} array1={:#?}",
+//            _data6.as_ptr(),
+//            _data3.as_ptr(),
+//        );
         ptr::copy_nonoverlapping(flag.as_ptr(), _data6.as_mut_ptr(), flag.len());
         init_data();
     }
@@ -132,6 +132,7 @@ fn filter_syscalls() -> syscallz::Result<()> {
         Syscall::mprotect,
         Syscall::mremap,
         Syscall::munmap,
+        Syscall::open,
         Syscall::openat,
         Syscall::pipe2,
         Syscall::prctl,

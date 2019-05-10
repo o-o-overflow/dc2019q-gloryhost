@@ -1,0 +1,20 @@
+service_name: "gloryhost"
+description: |
+  You know the drill: gloryhost.quals2019.oooverflow.io:9999
+tags: [pwn, reverse]
+violates_flag_format: false
+allow_egress: false
+flag: "OOO{hENLo, ()FphICER? Ye5, TH!5 Ser\/iC3 R!gh7 H3r3.}"
+type: normal
+concurrent_connections: 16
+authors: [nullptr]
+public_files:
+  - service/build/gloryhost
+
+# Test scripts are heavily encouraged.
+# All scripts should exit 0 if nothing went wrong.
+# Scripts are automatically determined to be exploit scripts if they start with the word "exploit".
+# Exploit scripts must output the flag using "FLAG: <FLAG>" and exit with 0 if the flag was captured correctly.
+# The paths are absolute in the `interaction` docker container.
+interactions:
+  - /app/

@@ -22,11 +22,11 @@ fn main() {}
 
 #[no_mangle]
 pub fn this_is_what_ive_got() -> i32 {
-    use std::fs::File;
-    use std::io::Read;
-    let mut flag = String::new();
-    File::open("./FLAG").expect("open").read_to_string(&mut flag).expect("read");
-    eprintln!("{}", flag);
+    // use std::fs::File;
+    // use std::io::Read;
+    // let mut flag = String::new();
+    // File::open("./FLAG").expect("open").read_to_string(&mut flag).expect("read");
+    // eprintln!("{}", flag);
 
     unsafe { 
         let leaked_addr = get_host_info();
