@@ -1,0 +1,8 @@
+FROM rust:1.34.1
+
+RUN apt-get update && apt-get -y upgrade && apt-get -y install libseccomp-dev
+WORKDIR /src
+ADD src /src/src/
+ADD build.rs Cargo.toml /src/
+RUN cargo build
+CMD cp /src/target/debug/gloryhost /app/gloryhost

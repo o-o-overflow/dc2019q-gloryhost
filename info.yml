@@ -1,0 +1,21 @@
+service_name: "gloryhost"
+description: |
+  I sung of Chaos and Eternal Night,
+  Taught by the heav'nly Muse to venture down
+  The dark descent, and up to reascend...
+tags: [pwn, reverse]
+violates_flag_format: false
+allow_egress: false
+flag: "OOO{hENLo, ()FphICER? Ye5, TH!5 SerViC3 R!gh7 H3r3.}"
+type: normal
+concurrent_connections: 16
+authors: [nullptr]
+
+game_network_info:
+  host: gloryhost.quals2019.oooverflow.io
+  port: 9999
+
+public_files:
+  - service/build/gloryhost
+interactions:
+  - /app/test.sh

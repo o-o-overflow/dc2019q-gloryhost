@@ -1,0 +1,19 @@
+[package]
+name = "gloryhost"
+version = "0.1.4"
+authors = ["Anonymous <anonymous@oooverflow.io>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+futures = "0.1.26"
+libc = "0.2.54"
+slog = "2.4.1"
+slog-term = "2.4.0"
+syscallz = "0.11.2"
+tokio = "0.1.19"
+wasmer-runtime = "0.4.1"
+wasmer-wasi = "0.4.1"
+
+[build-dependencies]
+cc = "1.0.36"
